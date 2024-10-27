@@ -8,12 +8,6 @@ enum DayOfWeek {
   Sunday,
 }
 
-let day: DayOfWeek.Saturday | DayOfWeek.Sunday;
-
-// const isWeekend = (day: DayOfWeek) => {
-//   return DayOfWeek.Saturday || DayOfWeek.Sunday;
-// };
-
 const isWeekend = (day: DayOfWeek): boolean => {
-  return !day;
+  return day === DayOfWeek.Saturday || day === DayOfWeek.Sunday;
 };
